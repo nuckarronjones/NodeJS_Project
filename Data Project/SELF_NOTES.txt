@@ -1,4 +1,4 @@
 NOTES
 --------------------------------
 
--You left off researching GET and POST routes for form submissions
+-Configure database and search api
