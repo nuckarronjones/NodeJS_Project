@@ -1,12 +1,8 @@
 /*/////////////////////////////////////////////////////////////////
 			TEST: debug feature, remove later
 //////////////////////////////////////////////////////////////////*/
-let result ={/*TEST ejs template*/
-	1: "1",
-	2: "2",
-	3: "3"
-}
 
+const dateData = require("./MyModules/getDate.js")//custom date module
 const express = require('express');//express server module
 const fs = require("fs");//file system retrieval module
 const app = express();//app = instance of express. Holds all properties
@@ -21,13 +17,26 @@ app.use(express.static('public'));//access to contents in public directory
 
 
 app.get('/home',(req,res)=>{
-	res.render("Results.ejs",{item: result[1]});
+	res.render("Results.ejs",{});
 });
 
-app.post('/home',urlencodedParser,(req,res)=>{
+app.post('/home',urlencodedParser,(req,res)=>{//for posting data from form submission
+	let post = JSON.stringify(req.body,null,4);//corretly formatted data object
+
+	let data = {
+		name: req.body.name,
+		major: req.body.major.slice(0,-2),
+		age: req.body.age,
+		date: dateData.getDate()
+	}
+
 	if(!req.body) return res.sendStatus(400);
-	console.log(req.body);
-	res.render('Results.ejs',{item: result[1]})
+
+	fs.appendFile("./DatabaseFile/Database.txt",JSON.stringify(data,null,4),(err)=>{//JSON format, write to file
+		if(err) throw err
+	})
+
+	res.render('Results.ejs',{})
 })
 
 
