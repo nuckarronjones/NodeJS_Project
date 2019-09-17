@@ -7,7 +7,7 @@ const express = require('express');//express server module
 const fs = require("fs");//file system retrieval module
 const app = express();//app = instance of express. Holds all properties
 const bodyParser = require('body-parser');//middleware for html form POST requests
-const port = 3000;//port listen
+const port = process.env.PORT || 1337;//port listen
 
 let urlencodedParser = bodyParser.urlencoded({extended:false});//bodyparser parameters, handles POST data (actual middleware)
 
@@ -16,14 +16,14 @@ app.set(("view engine","ejs"));//sets view to accomodate ejs template, in defaul
 app.use(express.static('public'));//access to contents in public directory
 
 
-app.get('/home',(req,res)=>{
-	res.render("Results.ejs",{});
+app.get('/home',(req,res)=>{//request website
+	res.render("index.ejs",{});
 });
 
 app.post('/home',urlencodedParser,(req,res)=>{//for posting data from form submission
 	let post = JSON.stringify(req.body,null,4);//corretly formatted data object
 
-	let data = {
+	let data = {//data to send to database
 		name: req.body.name,
 		major: req.body.major.slice(0,-2),
 		age: req.body.age,
@@ -36,7 +36,7 @@ app.post('/home',urlencodedParser,(req,res)=>{//for posting data from form submi
 		if(err) throw err
 	})
 
-	res.render('Results.ejs',{})
+	res.render('index.ejs',{})
 })
 
 
