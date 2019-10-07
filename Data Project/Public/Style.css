@@ -1,3 +1,33 @@
+/*******************
+GLOBAL
+*******************/
+.padd{
+	padding-left:10px;
+}
+.floatUp{
+	animation: floating 1s  normal ease-in-out;
+	animation-fill-mode: forwards;
+}
+.select{
+	color:grey;
+}
+
+@keyframes floating {
+    0% {
+    	transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+    	transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+
+
+/*******************
+DESKTOP
+*******************/
 *{
 	padding:0;
 	margin:0;
@@ -16,13 +46,13 @@
 			align-content: center;
 			justify-content: center;
 		}
-		#searchContainer{
+			#searchContainer{
 				box-sizing: border-box;
 				padding:20pt;
 				min-height:500px;
 				min-width:1000px;
-				/*background: rgba(255,0,0,0.3);TEST*/
-		}
+				/*background: rgba(255,0,0,0.3); TEST*/
+			}
 				#title{
 					font-family: 'Shrikhand', cursive;
 					color:white;
@@ -30,7 +60,7 @@
 				}
 				#MainForm{
 					position: relative;
-					/*background-color:green; TEST*/
+					/*background-color:green; TEST */
 					min-height:300px;
 				}
 				.searchField{
@@ -42,22 +72,14 @@
 					margin-top:20pt;
 
 					font-family: arial;
-					font-weight: bold;
+					font-weight: ;
 					color:white;
 					font-size: 15pt;
 				}
-				::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  						color: white;
-  						opacity: .5;
-				}
-						.padd{
-							padding-left:10px;
-						}
-				#submitDiv{
-					position: absolute;
-					bottom:0px;
-					width: 100%;
-				}
+					::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	  						color: white;
+	  						opacity: .5;
+					}
 					#submit{
 						background: rgba(255,255,255,0.5);
 					}

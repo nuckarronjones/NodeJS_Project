@@ -1,113 +1,76 @@
 {
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:12:51"
+    "job": "",
+    "location": "",
+    "date": "2019-10-6 21:24:40"
 }{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:13:19"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:13:25"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:13:31"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:13:37"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:13:46"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:14:16"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:14:37"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:15:57"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:19:2"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:21:53"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:22:22"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:22:47"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:23:6"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:23:14"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:23:38"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:26:7"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:26:31"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:26:50"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:26:59"
-}{
-    "job": "dsgsd",
-    "location": "sggsg",
-    "date": "2019-10-6 20:27:5"
-}{
-    "job": "Software Developer",
-    "location": "Gulf Breeze",
-    "date": "2019-10-6 20:27:25"
-}{
-    "job": "Software Developer",
-    "location": "Gulf Breeze",
-    "date": "2019-10-6 20:30:29"
-}{
-    "job": "Software Developer",
-    "location": "Gulf Breeze",
-    "date": "2019-10-6 20:31:20"
-}{
-    "job": "Software Developer",
-    "location": "Gulf Breeze",
-    "date": "2019-10-6 20:35:51"
-}{
-    "job": "Software Developer",
-    "location": "Gulf Breeze",
-    "date": "2019-10-6 20:36:9"
+    "job": "ddd",
+    "location": "ddd",
+    "date": "2019-10-6 21:31:57"
 }{
     "job": "",
     "location": "",
-    "date": "2019-10-6 20:36:15"
+    "date": "2019-10-6 21:32:6"
+}{
+    "job": "",
+    "location": "",
+    "date": "2019-10-6 21:32:13"
+}{
+    "job": "",
+    "location": "",
+    "date": "2019-10-6 21:32:18"
+}{
+    "job": "",
+    "location": "",
+    "date": "2019-10-6 21:32:22"
 }{
     "job": "Software Developer",
+    "location": "Gulf Breeze Florida ",
+    "date": "2019-10-6 21:32:55"
+}{
+    "job": "Software Developer",
+    "location": "Gulf Breeze Florida ",
+    "date": "2019-10-6 21:32:58"
+}{
+    "job": "Software Developer",
+    "location": "Gullf Breeze",
+    "date": "2019-10-6 21:33:40"
+}{
+    "job": "Microsoft Azure",
+    "location": "Gulf Breeze Florida ",
+    "date": "2019-10-6 21:34:5"
+}{
+    "job": "Microsoft Azure",
+    "location": "Gulf Breeze Florida ",
+    "date": "2019-10-6 21:34:8"
+}{
+    "job": "",
+    "location": "",
+    "date": "2019-10-6 21:41:46"
+}{
+    "job": "",
+    "location": "",
+    "date": "2019-10-6 21:41:55",
+    "radius": "50"
+}{
+    "job": "Software Developer",
+    "location": "Gulf Breeze Florida ",
+    "date": "2019-10-6 21:43:47",
+    "radius": "200"
+}{
+    "job": "Software Developer",
+    "location": "Navarre",
+    "date": "2019-10-6 21:46:28"
+}{
+    "job": "Software Developer",
+    "location": "Navarre",
+    "date": "2019-10-6 21:46:30"
+}{
+    "job": "Software Engineer",
     "location": "Gulf Breeze",
-    "date": "2019-10-6 20:36:19"
+    "date": "2019-10-6 21:51:16"
+}{
+    "job": "Dave",
+    "location": "Dave",
+    "date": "2019-10-6 21:53:44",
+    "radius": "200"
 }

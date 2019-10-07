@@ -27,7 +27,8 @@ app.post('/home',urlencodedParser,(req,res)=>{//for posting data from form submi
 		job: req.body.job,
 		/*major: req.body.major.slice(0,-2),*/
 		location: req.body.location,
-		date: dateData.getDate()
+		date: dateData.getDate(),
+		radius: req.body.radius
 	}
 
 	if(!req.body) return res.sendStatus(400);
@@ -36,10 +37,14 @@ app.post('/home',urlencodedParser,(req,res)=>{//for posting data from form submi
 		if(err) throw err
 	})
 
-	res.render('index.ejs',{})
+	res.render('results.ejs',{})
 })
 
 
 app.listen(port, () =>{
 	console.log(`Example app listening on port ${port}!`)
 });
+
+/*/////////////////////////////////////////////////////////////////
+			LEFT OFF AT FRONT DESIGN AND ANIMATIONS
+//////////////////////////////////////////////////////////////////*/
