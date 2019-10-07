@@ -5,36 +5,37 @@
 	<link rel="stylesheet" href="/Style.css">
 	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet"> 
 </head>
 <body>
-	<div><!--TEST form submission-->
+<div class="container">
 
-		<h1>Test EJS Page</h1>
-		<br>
-		<p>Result </p>
+	<div id="searchPage">
 
-		<form id="MainForm" action="/home" method="post">
-	        <fieldset>
-	            <label for="name">Name:</label>
-	            <input type="text" id="Name" name="name" placeholder="Enter your name" />
+		<div id="searchContainer">
 
-	            <label for="major">Major</label>
-				<select id="SelectMajor" name="major">
-					
-				</select>
+				<h1 id="title">JobQuery</h1>
 
-	            <label for="age">Age</label>
-				<select id="SelectAge" name="age">
+				<form id="MainForm" action="/home" method="post">
+			            <input class="searchField padd" type="text" id="job" name="job" placeholder="Job Title" />
 
-	            </select>
+			            <!--label for="major">Major</label>
+						<select id="SelectMajor" name="major">
+							
+						</select-->
 
-	            <input type="submit" value="Submit" />
+						<input class="searchField padd" type="text" id="location" name="location" placeholder="Location">
 
-	        </fieldset>
-	    </form>
+						<div id="submitDiv">	
+							<input id="submit" class="searchField" type="submit" value="Submit" />
+						</div>
+			    </form>
+		</div><!--searchcontainer-->
 
-	</div><!--TEST-->
+	</div><!--searchpage-->
 
-	<script type="text/javascript" src="/Javascript.js"></script>
+</div><!--container-->
+
+<script type="text/javascript" src="/Javascript.js"></script>
 </body>
 </html>

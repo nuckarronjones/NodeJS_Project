@@ -2,6 +2,62 @@
 	padding:0;
 	margin:0;
 }
-body{
-	background-color:#eee;
+.container{
+	width:100vw;
+	height:100vh;
+	background-image: linear-gradient(to bottom right, #c91475, #f7f420);
 }
+		#searchPage{
+			z-index: 2;/*On top of empty results page*/
+			width:100vw;
+			height:100vh;
+			/*background: rgba(0,0,0,0.5);TEST*/
+			display:grid;
+			align-content: center;
+			justify-content: center;
+		}
+		#searchContainer{
+				box-sizing: border-box;
+				padding:20pt;
+				min-height:500px;
+				min-width:1000px;
+				/*background: rgba(255,0,0,0.3);TEST*/
+		}
+				#title{
+					font-family: 'Shrikhand', cursive;
+					color:white;
+					font-size: 50pt;
+				}
+				#MainForm{
+					position: relative;
+					/*background-color:green; TEST*/
+					min-height:300px;
+				}
+				.searchField{
+					border:none;
+					background: rgba(255,255,255,0.3);
+					box-sizing: border-box;
+					width:100%;
+					height:30pt;
+					margin-top:20pt;
+
+					font-family: arial;
+					font-weight: bold;
+					color:white;
+					font-size: 15pt;
+				}
+				::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  						color: white;
+  						opacity: .5;
+				}
+						.padd{
+							padding-left:10px;
+						}
+				#submitDiv{
+					position: absolute;
+					bottom:0px;
+					width: 100%;
+				}
+					#submit{
+						background: rgba(255,255,255,0.5);
+					}

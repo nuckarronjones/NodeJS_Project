@@ -24,9 +24,9 @@ app.post('/home',urlencodedParser,(req,res)=>{//for posting data from form submi
 	let post = JSON.stringify(req.body,null,4);//corretly formatted data object
 
 	let data = {//data to send to database
-		name: req.body.name,
-		major: req.body.major.slice(0,-2),
-		age: req.body.age,
+		job: req.body.job,
+		/*major: req.body.major.slice(0,-2),*/
+		location: req.body.location,
 		date: dateData.getDate()
 	}
 
