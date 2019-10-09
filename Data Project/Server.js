@@ -1,5 +1,6 @@
 /*/////////////////////////////////////////////////////////////////
 			TEST: debug feature, remove later
+			BOOKMARK: Revisit
 //////////////////////////////////////////////////////////////////*/
 
 const dateData = require("./MyModules/getDate.js")//custom date module
@@ -8,6 +9,7 @@ const fs = require("fs");//file system retrieval module
 const app = express();//app = instance of express. Holds all properties
 const bodyParser = require('body-parser');//middleware for html form POST requests
 const port = process.env.PORT || 1337;//port listen
+const webscrape = require("./MyModules/webscrape.js");//custom webscraping module
 
 let urlencodedParser = bodyParser.urlencoded({extended:false});//bodyparser parameters, handles POST data (actual middleware)
 
@@ -31,11 +33,14 @@ app.post('/home',urlencodedParser,(req,res)=>{//for posting data from form submi
 		radius: req.body.radius
 	}
 
+	webscrape.scrape(data);//pass search data into webscraping module
+
 	if(!req.body) return res.sendStatus(400);
 
-	fs.appendFile("./DatabaseFile/Database.txt",JSON.stringify(data,null,4),(err)=>{//JSON format, write to file
-		if(err) throw err
-	})
+	// fs.appendFile("./DatabaseFile/Database.txt",JSON.stringify(data,null,4),(err)=>{//JSON format, write to file
+	// 	if(err) throw err
+	// })
+	//BOOKAMRK: ADD BACK IN LATER
 
 	res.render('results.ejs',{})
 })

@@ -4,26 +4,36 @@ GLOBAL
 .padd{
 	padding-left:10px;
 }
-.floatUp{
-	animation: floating 1s  normal ease-in-out;
-	animation-fill-mode: forwards;
-}
+.
 .select{
 	color:grey;
 }
 
-@keyframes floating {
-    0% {
-    	transform: translateY(0px);
-        opacity: 1;
-    }
-    100% {
-    	transform: translateY(-200px);
-        opacity: 0;
-    }
+.rotate {
+  animation: rotation 10s infinite linear;
 }
+	@keyframes rotation {
+	  from {
+	    transform: rotate(0deg);
+	  }
+	  to {
+	    transform: rotate(360deg);
+	  }
+	}
 
-
+.fade{
+	animation: fade 1s forwards ease-in-out;
+}
+	@keyframes fade {
+	    0% {
+	        opacity: 1;
+	        transform: translateY(0px);
+	    }
+	    100% {
+	        opacity: 0;
+	        transform: translateY(-200px);
+	    }
+	}
 
 /*******************
 DESKTOP
@@ -36,6 +46,7 @@ DESKTOP
 	width:100vw;
 	height:100vh;
 	background-image: linear-gradient(to bottom right, #c91475, #f7f420);
+	overflow: hidden;
 }
 		#searchPage{
 			z-index: 2;/*On top of empty results page*/
@@ -46,11 +57,18 @@ DESKTOP
 			align-content: center;
 			justify-content: center;
 		}
+			#cog{
+				position: fixed;
+				width:500px;
+				height:500px;
+				bottom:-250px;
+				left:-250px;
+			}
 			#searchContainer{
 				box-sizing: border-box;
 				padding:20pt;
 				min-height:500px;
-				min-width:1000px;
+				min-width:800px;
 				/*background: rgba(255,0,0,0.3); TEST*/
 			}
 				#title{

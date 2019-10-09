@@ -1,9 +1,9 @@
 $(document).ready(()=>{
 
 
-   $("#submit").click(()=>{//delay POST request to accomodate seamless page transitions
+	$("#submit").click(()=>{//delay POST request to accomodate seamless page transitions
 
-      $("#searchContainer").addClass("floatUp");
+   	$("#searchPage").addClass("fade");
 
       setTimeout(()=>{
          $("#MainForm").submit();
