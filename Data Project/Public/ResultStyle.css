@@ -1,0 +1,60 @@
+*{
+	padding:0;
+	margin:0;
+}
+.container{
+	width:100%;
+	height:100%;
+	background-image: linear-gradient(to bottom right, #c91475, #f7f420);
+	font-family: arial;
+}
+	#title
+	{
+		font-family: 'Shrikhand', cursive;
+		color:white;
+		font-size: 40pt;
+		text-align: center;
+	}
+	#query{
+		text-align: center;
+		color: white;
+		font-weight: 1;
+	}
+	#resultsContainter{
+		box-sizing: border-box;
+		padding-top:20pt;
+		display: grid;
+		width:100%;
+		height: 100%;
+		/*TEST background-color: rgba(0, 0, 255, 0.3);*/
+
+		display: grid;
+		grid-gap: 30pt;
+		grid-template-columns: 200px 200px 200px;
+		grid-template-rows: 200px 200px 200px 200px;
+		grid-template-areas: 
+		"Jobs Salary Salary"
+		"Graph Graph Graph"
+		"Graph Graph Graph"
+		;
+
+		justify-content: center;
+	}
+	.box{
+		background-color: white;
+		box-shadow:  5px 5px 1px rgba(0, 0, 0, 0.3);
+		color:grey;
+	}
+		#jobs{
+			display: grid;
+			align-content: center;
+			justify-content: center;
+			grid-area: Jobs;
+			text-align: center;
+		}
+		#salary{
+			grid-area: Salary;
+		}
+		#graph{
+			grid-area: Graph;
+		}

@@ -37,9 +37,9 @@ app.post('/home',urlencodedParser,(req,res)=>{//for posting data from form submi
 
 	if(!req.body) return res.sendStatus(400);
 
-	// fs.appendFile("./DatabaseFile/Database.txt",JSON.stringify(data,null,4),(err)=>{//JSON format, write to file
-	// 	if(err) throw err
-	// })
+	fs.appendFile("./DatabaseFile/Database.txt",JSON.stringify(data,null,4),(err)=>{//JSON format, write to file
+		if(err) throw err
+	})
 	//BOOKAMRK: ADD BACK IN LATER
 
 	res.render('results.ejs',{})
